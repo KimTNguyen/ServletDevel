@@ -28,7 +28,7 @@ public class UserID extends HttpServlet {
 		 * Avoids multiple threads access to the same service
 		 */
 		synchronized (this) {
-			out.println(ServletUtilities.DOCTYPE_HTML5 + ServletUtilities.getHeaderAndTitle("Your unique id")
+			out.println(ServletUtilities.DOCTYPE_HTML5 + ServletUtilities.generateHTMLHeader("Your unique id")
 					+ "<body><p> Your unique id is: " + nextID + "</p>\n</body></html>");
 			nextID = nextID + 1;
 		}
