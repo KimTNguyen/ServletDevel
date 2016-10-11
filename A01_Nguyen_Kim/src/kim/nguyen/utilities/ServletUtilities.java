@@ -9,10 +9,14 @@
 package kim.nguyen.utilities;
 
 public class ServletUtilities {
-	public static final String HTML = "text/html";
-	public static final String DOCTYPE_HTML5 = "<!DOCTYPE html>\n";
+    public static final String HTML = "text/html";
+    public static final String DOCTYPE_HTML5 = "<!DOCTYPE html>\n";
 
-	public static String getHeaderAndTitle(String title) {
-		return "<html>\n<head>\n<title>" + title + "</title>\n</head>\n";
-	}
+    public static String generateHTMLHeader(String title) {
+        return "<html>\n<head>\n<title>" + title + "</title>\n</head>\n";
+    }
+
+    public static String generateHTMLBody(String content) {
+        return ("<body>\n" + "<p>" + content + "</p>\n" + "</body>\n </html>");
+    }
 }

@@ -1,9 +1,6 @@
 /**
- * HelloServlet.java will prints Hello text on the screen.
- * 
- * @version %I%, %G%
- * 
- * @author Kim Nguyen
+ * UserIDServlet.java demonstrates how to solve problems with multiple threads try to access to the same servlet's service
+ * see Core Servlets and JavaServer Pages by Marty Hall and Larry Brown Chapter 3, p.89
  */
 
 package kim.nguyen.servlets;
@@ -11,17 +8,18 @@ package kim.nguyen.servlets;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.ServletException;
 
 import kim.nguyen.utilities.ServletUtilities;
 
-@WebServlet("/hello")
-public class HelloServlet extends HttpServlet {
-	
+@WebServlet("/userid")
+public class UserIDServlet extends HttpServlet {
+	private int nextID = 0;
+
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
      *      response)
@@ -30,7 +28,13 @@ public class HelloServlet extends HttpServlet {
 		response.setContentType(ServletUtilities.HTML);
 		PrintWriter out = response.getWriter();
 
-		out.print(ServletUtilities.DOCTYPE_HTML5 + "<html>\n" + "<head><title>Hello</title></head>\n"
-				+ "<body bgcolor=\"#FDF5E6\">\n" + "<h1>Hello</h1>\n" + "</body></html>");
+		/*
+		 * Avoids multiple threads access to the same service
+		 */
+		synchronized (this) {
+			out.println(ServletUtilities.DOCTYPE_HTML5 + ServletUtilities.generateHTMLHeader("Your unique id")
+					+ "<body><p> Your unique id is: " + nextID + "</p>\n</body></html>");
+			nextID = nextID + 1;
+		}
 	}
 }

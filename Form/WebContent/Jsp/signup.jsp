@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>Sign Up Form</h1>
-	<form action="/Form/sign-up" method="GET">
+	<form action="/Form/SignUp" method="GET">
 		<p> Email: <input type="text" id="email" name="email" /> </p>
 		<p> Name: <input type="text" id="name" name="name" /> </p>
 		<p> Password: <input type="password" id="password" name="password" /> </p>
