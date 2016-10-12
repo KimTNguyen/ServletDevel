@@ -25,7 +25,7 @@ public class TableGeneration extends HttpServlet {
 		int noOfRows = 25;
 		int noOfCols = 10;
 		String doctype = ServletUtilities.DOCTYPE_HTML5;
-		String content = ServletUtilities.getHeaderAndTitle("Table Generation");
+		String content = ServletUtilities.generateHTMLHeader("Table Generation");
 		PrintWriter out = response.getWriter();
 		
 		out.println(doctype + content + "<body>\n" + "<table>");

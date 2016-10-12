@@ -22,6 +22,10 @@ import kim.nguyen.utilities.ServletUtilities;
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
 	
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     *      response)
+     */
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType(ServletUtilities.HTML);
 		PrintWriter out = response.getWriter();

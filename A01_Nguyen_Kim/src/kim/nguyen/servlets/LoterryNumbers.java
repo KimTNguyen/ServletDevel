@@ -47,7 +47,7 @@ public class LoterryNumbers extends HttpServlet {
 
 		PrintWriter out = reponse.getWriter();
 
-		out.println(ServletUtilities.DOCTYPE_HTML5 + ServletUtilities.getHeaderAndTitle("Your Lottery Numbers")
+		out.println(ServletUtilities.DOCTYPE_HTML5 + ServletUtilities.generateHTMLHeader("Your Lottery Numbers")
 				+ "<b> The following numbers are best numbers for you: </b>" + "<ol>\n");
 
 		for (int index = 0; index < luckyNumbers.length; ++index) {
