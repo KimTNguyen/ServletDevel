@@ -1,5 +1,5 @@
 /**
- * SignUpFormServlet.java Handles request from clients by attaching request's information in the response.
+ * UserRegistrationServlet.java Handles request from clients by attaching request's information in the response.
  * 
  * @version %I%, %G%
  * 
@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/SignUp")
-public class SignUpFormServlet extends HttpServlet {
+@WebServlet("/Registration")
+public class UserRegistrationServlet extends HttpServlet {
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
