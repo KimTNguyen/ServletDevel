@@ -22,6 +22,8 @@ import kim.nguyen.utilities.ServletUtilities;
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
 	
+    private static final long serialVersionUID = 1148788015586169052L;
+
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
      *      response)

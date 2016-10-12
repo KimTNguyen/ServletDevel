@@ -24,6 +24,8 @@ import kim.nguyen.utilities.ServletUtilities;
 @WebServlet("/ArrayInitialization")
 public class ArrayInitializationServlet extends HttpServlet {
 
+    private static final long serialVersionUID = -2902631327852933602L;
+
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
      *      response)

@@ -17,10 +17,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/numbers")
+@WebServlet("/random-numbers")
 public class RandomNumber extends HttpServlet {
 	
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    private static final long serialVersionUID = -6003963690904796846L;
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		String doctype = "<!DOCTYPE html>";
 		String content = "<html>\n" + "<head>\n" + "<title>\n" + "My Favourite Food" + "</title\n>" + "</head>\n"
