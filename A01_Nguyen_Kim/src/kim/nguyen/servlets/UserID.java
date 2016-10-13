@@ -8,17 +8,18 @@ package kim.nguyen.servlets;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.ServletException;
 
 import kim.nguyen.utilities.ServletUtilities;
 
-@WebServlet("/userid")
+@WebServlet("/user-id")
 public class UserID extends HttpServlet {
-	private int nextID = 0;
+    private static final long serialVersionUID = 3386576970611252128L;
+    private int nextID = 0;
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType(ServletUtilities.HTML);

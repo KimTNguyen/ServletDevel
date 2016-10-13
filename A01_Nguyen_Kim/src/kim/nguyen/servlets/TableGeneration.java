@@ -8,18 +8,23 @@
 
 package kim.nguyen.servlets;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.PrintWriter;
 
-import javax.servlet.*;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import kim.nguyen.utilities.ServletUtilities;
 
-@WebServlet("/htmltable")
+@WebServlet("/html-table-generation")
 public class TableGeneration extends HttpServlet {
 	
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    private static final long serialVersionUID = -8666653285421156890L;
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		response.setContentType("text/html");
 		
 		int noOfRows = 25;

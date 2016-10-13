@@ -11,11 +11,11 @@ package kim.nguyen.servlets;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.ServletException;
 
 /**
  * The BasicServlet class will override print my name on the screen when
@@ -23,6 +23,8 @@ import javax.servlet.ServletException;
  */
 @WebServlet("/name")
 public class BasicServlet extends HttpServlet {
+
+    private static final long serialVersionUID = 5828392528025697405L;
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
