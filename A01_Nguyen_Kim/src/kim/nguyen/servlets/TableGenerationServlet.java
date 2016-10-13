@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import kim.nguyen.utilities.ServletUtilities;
 
-@WebServlet("/html-table-generation-servlet")
+@WebServlet("/html-table-generation")
 public class TableGenerationServlet extends HttpServlet {
 	
     private static final long serialVersionUID = -6300672759000069707L;

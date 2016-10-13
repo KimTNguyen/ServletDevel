@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import kim.nguyen.utilities.ServletUtilities;
 
-@WebServlet("/user-id-servlet")
+@WebServlet("/user-id")
 public class UserIDServlet extends HttpServlet {
     private static final long serialVersionUID = -3389716256999755748L;
     private int nextID = 0;

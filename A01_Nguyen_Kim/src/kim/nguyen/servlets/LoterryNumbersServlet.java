@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import kim.nguyen.utilities.ServletUtilities;
 
-@WebServlet("/loterry-numbers-servlet")
+@WebServlet("/loterry-numbers")
 public class LoterryNumbersServlet extends HttpServlet {
 
     private static final long serialVersionUID = 803875535301085787L;

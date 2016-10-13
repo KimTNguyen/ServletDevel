@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/random-numbers-servlet")
+@WebServlet("/random-numbers")
 public class RandomNumberServlet extends HttpServlet {
 	
     private static final long serialVersionUID = -2761074875333720953L;
