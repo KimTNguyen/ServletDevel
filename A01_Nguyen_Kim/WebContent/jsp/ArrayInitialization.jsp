@@ -9,7 +9,7 @@
 <body>
 	<h1>Array Initialization</h1>
 	<p>Choose Array's dimensions that you wish to create by clicking the below button:</p>
-	<form action="/A01_Nguyen_Kim/ArrayInitialization" method="GET">
+	<form action="/A01_Nguyen_Kim/array-initialization" method="GET">
 		<p>
 			Array's size: <input type="text" id="size" name="size" /><br/>
 			Upper bound: <input type="text" id="upperBound" name="upperBound" /><br/>

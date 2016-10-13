@@ -17,9 +17,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/numbers")
+@WebServlet("/random-numbers")
 public class RandomNumberServlet extends HttpServlet {
 	
+    private static final long serialVersionUID = -2761074875333720953L;
+
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
      *      response)

@@ -21,8 +21,10 @@ import javax.servlet.http.HttpServletResponse;
 import kim.nguyen.business.TwoDArray;
 import kim.nguyen.utilities.ServletUtilities;
 
-@WebServlet("/ArrayInitialization")
+@WebServlet("/array-initialization")
 public class ArrayInitializationServlet extends HttpServlet {
+
+    private static final long serialVersionUID = -2902631327852933602L;
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
