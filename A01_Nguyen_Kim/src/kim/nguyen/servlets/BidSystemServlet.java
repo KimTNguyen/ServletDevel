@@ -3,7 +3,6 @@
  */
 package kim.nguyen.servlets;
 
-import java.beans.BeanInfo;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.reflect.InvocationTargetException;
@@ -100,9 +99,11 @@ public class BidSystemServlet extends HttpServlet {
      */
     private <T> String inputElement(String prompt, String name, T value) {
         String message = "<b>Required field!</b>";
-        String messageField = prompt + ": " + "<input type=\"text\" name=\"" + name + "\"" + " value=\"\" />" + message + "<br/>\n";
-        String inputField = prompt + ": " + "<input type=\"text\" name=\"" + name + "\"" + " value=\"" + value + "\"/>" + "<br/>";
-        
+        String messageField = prompt + ": " + "<input type=\"text\" name=\"" + name + "\"" + " value=\"\" />" + message
+                + "<br/>\n";
+        String inputField = prompt + ": " + "<input type=\"text\" name=\"" + name + "\"" + " value=\"" + value + "\"/>"
+                + "<br/>";
+
         if (value instanceof Double) {
             if ((Double) value == 0) {
                 return messageField;

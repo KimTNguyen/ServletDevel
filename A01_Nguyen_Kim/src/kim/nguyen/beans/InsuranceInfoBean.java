@@ -9,14 +9,16 @@ public class InsuranceInfoBean {
     private String name = "No name specified";
     private String id = "No ID specified";
     private int numChildren = 0;
-    private boolean isMarried = false;
+    private boolean married = false;
 
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
-        this.name = ServletUtilities.filterHtml(name);
+        if (name != null && !name.equals("")) {
+            this.name = ServletUtilities.filterHtml(name);
+        }
     }
 
     public String getId() {
@@ -24,7 +26,9 @@ public class InsuranceInfoBean {
     }
 
     public void setId(String id) {
-        this.id = ServletUtilities.filterHtml(id);
+        if (id != null && !id.equals("")) {
+            this.id = ServletUtilities.filterHtml(id);
+        }
     }
 
     public int getNumChildren() {
@@ -32,14 +36,16 @@ public class InsuranceInfoBean {
     }
 
     public void setNumChildren(int numChildren) {
-        this.numChildren = numChildren;
+        if (numChildren != 0) {
+            this.numChildren = numChildren;
+        }
     }
 
     public boolean isMarried() {
-        return isMarried;
+        return married;
     }
 
     public void setMarried(boolean isMarried) {
-        this.isMarried = isMarried;
+        this.married = isMarried;
     }
 }
