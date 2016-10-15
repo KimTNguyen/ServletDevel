@@ -1,5 +1,5 @@
 /**
- * see Core Servlets and JavaServer Pages, by Marty Hall and Larry Brown, p.130
+ * @see Core Servlets and JavaServer Pages, by Marty Hall and Larry Brown, p.130
  */
 package kim.nguyen.servlets;
 
@@ -37,14 +37,14 @@ public class InsuranceInfoSubmissionServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        String title = "Insurance info for " + insuranceBean.getName();
-        String content = title + "<ul>\n" + "<li> Employee ID: " + insuranceBean.getId() + "\n<li>Number of children: "
-                + insuranceBean.getNumChildren() + "\n<li>Married: " + insuranceBean.isMarried() + "\n";
+        String title = "<h1>Insurance info for " + insuranceBean.getName() + "</h1>";
+        boolean isMarried = insuranceBean.isMarried();
+        String content = title + "\n<ul>\n" + "<li> Employee ID: " + insuranceBean.getId() + "\n<li>Number of children: "
+                + insuranceBean.getNumChildren() + "\n<li>Married: " + isMarried + "\n</ul>";
         
         response.setContentType(ServletUtilities.HTML);
         PrintWriter out = response.getWriter();
         out.println(ServletUtilities.DOCTYPE_HTML5 + ServletUtilities.generateHTMLHeader(title)
                 + ServletUtilities.generateHTMLBody(content));
     }
-
 }

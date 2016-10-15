@@ -1,3 +1,14 @@
+/**
+ * TwoDArray.java creates a two dimensional array based on the size, the lower 
+ * bound and the upper bound of the values that are passed in. In
+ * the case of no values or wrong values are passed in, the default values will
+ * be used to initialize the array.
+ * 
+ * @version %I%, %G%
+ * 
+ * @author Kim Nguyen
+ */
+
 package kim.nguyen.business;
 
 import java.util.Arrays;
@@ -6,10 +17,10 @@ import java.util.Random;
 public class TwoDArray {
     /* the size of the array */
     int size = 3;
-    
+
     /* lower bound of the values in the array */
     int beginValue = 3;
-    
+
     /* upper bound of the values in the array */
     int endValue = 10;
 
@@ -36,6 +47,24 @@ public class TwoDArray {
                 this.beginValue = newBeginValue;
                 this.endValue = newEndValue;
             }
+        }
+    }
+
+    /**
+     * Converts the String value to an Integer value, if the String value is
+     * invalid, the default value will be return
+     * 
+     * @param value
+     *            the value that the user input, which will be converted into an
+     *            Integer value
+     * @return a valid Integer value for the array's computation
+     */
+    private int getIntegerValue(String value) {
+        try {
+            return Integer.parseInt(value);
+        } catch (NumberFormatException e) {
+            System.err.println(e);
+            return -1;
         }
     }
 
@@ -76,23 +105,5 @@ public class TwoDArray {
      */
     public String getArrayValues(double[][] array) {
         return Arrays.deepToString(array);
-    }
-
-    /**
-     * Converts the String value to an Integer value, if the String value is
-     * invalid, the default value will be return
-     * 
-     * @param value
-     *            the value that the user input, which will be converted into an
-     *            Integer value
-     * @return a valid Integer value for the array's computation
-     */
-    private int getIntegerValue(String value) {
-        try {
-            return Integer.parseInt(value);
-        } catch (NumberFormatException e) {
-            System.err.println(e);
-            return -1;
-        }
     }
 }

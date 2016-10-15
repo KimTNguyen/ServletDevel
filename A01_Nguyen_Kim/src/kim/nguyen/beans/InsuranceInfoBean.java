@@ -1,5 +1,5 @@
 /**
- * see Core Servlets and JavaServer Pages, by Marty Hall and Larry Brown, p.131
+ * @see Core Servlets and JavaServer Pages, by Marty Hall and Larry Brown, p.131
  */
 package kim.nguyen.beans;
 
@@ -16,7 +16,7 @@ public class InsuranceInfoBean {
     }
 
     public void setName(String name) {
-        this.name = ServletUtilities.HTMLFilter(name);
+        this.name = ServletUtilities.filterHtml(name);
     }
 
     public String getId() {
@@ -24,7 +24,7 @@ public class InsuranceInfoBean {
     }
 
     public void setId(String id) {
-        this.id = ServletUtilities.HTMLFilter(id);
+        this.id = ServletUtilities.filterHtml(id);
     }
 
     public int getNumChildren() {

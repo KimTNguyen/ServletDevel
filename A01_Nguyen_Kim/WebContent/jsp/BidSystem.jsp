@@ -9,14 +9,14 @@
 <body>
 	<center>
 		<h1>Welcome to Auctions-R-Us<br/>Please Enter Bid.</h1>
-		<form action="/A01_Nguyen_Kim/bid-system">
-			Item ID: <input type="text" id="itemId" name="itemId" /><br/>
+		<form action="/A01_Nguyen_Kim/bid-system" method="GET">
+			Item ID: <input type="text" id="itemID" name="itemID" /><br/>
 			Item Name: <input type="text" id="itemName" name="itemName" /><br/>
-			Your Name: <input type="text" id="yourName" name="yourName" /><br/>
+			Your Name: <input type="text" id="buyer" name="buyer" /><br/>
 			Your Email Address: <input type="text" id="email" name="email" /><br/>
-			Amount Bid: <input type="text" id="amountBid" name="amountBid" /><br/>
-			Auto-increment bid to match other bidders? <input type="checkbox" id="increment" name="increment" /><br/>
-			<p><input type="button" value="Submit Bid" /></p>
+			Amount Bid: <input type="text" id="bidPrice" name="bidPrice" /><br/>
+			Auto-increment bid to match other bidders? <input type="checkbox" id="autoIncrement" name="autoIncrement" /><br/>
+			<p><input type="submit" value="Submit Bid" /></p>
 		</form>
 	</center>
 </body>

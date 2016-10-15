@@ -1,6 +1,6 @@
 /**
  * LoterryNumbersServlet.java demonstrates general initializations of a servlet.
- * see Core Servlets and JavaServer Pages by Marty Hall and Larry Brown Chapter 3, p.80
+ * @see Core Servlets and JavaServer Pages by Marty Hall and Larry Brown Chapter 3, p.80
  */
 
 package kim.nguyen.servlets;

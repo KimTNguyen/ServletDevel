@@ -17,13 +17,13 @@ public class ServletUtilities {
     }
 
     public static String generateHTMLBody(String content) {
-        return ("<body>\n" + "<p>" + content + "</p>\n" + "</body>\n </html>");
+        return ("<body>\n" + content + "\n" + "</body>\n </html>");
     }
 
     /*
-     * see see Core Servlets and JavaServer Pages, by Marty Hall and Larry Brown, p.122
+     * see Core Servlets and JavaServer Pages, by Marty Hall and Larry Brown, p.122
      */
-    public static String HTMLFilter(String input) {
+    public static String filterHtml(String input) {
         if (!hasSpecialChars(input)) {
             return input;
         }

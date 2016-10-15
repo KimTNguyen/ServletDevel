@@ -13,7 +13,7 @@
 			Name: <input type="text" id="name" name="name" /><br/>
 			Employee ID: <input type="text" id="id" name="id" /><br/>
 			Number of children: <input type="text" id="numChildren" name="numChildren" /><br/>
-			Married: <input type="checkbox" id="isMarried" name="isMarried" value="false" /><br/>
+			Married: <input type="checkbox" id="isMarried" name="isMarried" /><br/>
 			<input type="submit" value="Submit" />
 		</form>
 	</center>
