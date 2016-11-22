@@ -8,5 +8,9 @@
 </head>
 <body>
 <a href="jsp/ArrayInitialization.jsp">Array Exercise</a>
+<br/>
+<a href="jsp/InsuranceForm.jsp">Insurance Form</a>
+<br/>
+<a href="jsp/BidSystem.jsp">Bid System</a>
 </body>
 </html>
