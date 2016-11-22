@@ -10,13 +10,13 @@
     <h1>One-Stop Web Search!</h1>
     <form action="/A01_Nguyen_Kim/search-engines" method="get">
         Search keywords: <input type="text" id="searchString" name="searchString" /><br/>
-        <input type="radio" id="searchEngine" name="searchEngine" value="Google" /> Google
-        <input type="radio" id="searchEngine" name="searchEngine" value="AllTheWeb" /> AllTheWeb
-        <input type="radio" id="searchEngine" name="searchEngine" value="Yahoo" /> Yahoo
-        <input type="radio" id="searchEngine" name="searchEngine" value="AltaVista" /> AltaVista
-        <input type="radio" id="searchEngine" name="searchEngine" value="Lycos" /> Lycos
-        <input type="radio" id="searchEngine" name="searchEngine" value="HotBot" /> HotBot
-        <input type="radio" id="searchEngine" name="searchEngine" value="MSN" /> MSN
+        <input type="radio" id="searchEngine" name="searchEngine" value="google" /> Google
+        <input type="radio" id="searchEngine" name="searchEngine" value="alltheweb" /> AllTheWeb
+        <input type="radio" id="searchEngine" name="searchEngine" value="yahoo" /> Yahoo
+        <input type="radio" id="searchEngine" name="searchEngine" value="altavista" /> AltaVista
+        <input type="radio" id="searchEngine" name="searchEngine" value="lycos" /> Lycos
+        <input type="radio" id="searchEngine" name="searchEngine" value="hotbot" /> HotBot
+        <input type="radio" id="searchEngine" name="searchEngine" value="msn" /> MSN
         <input type="submit" value="Submit" />
     </form>
 </body>

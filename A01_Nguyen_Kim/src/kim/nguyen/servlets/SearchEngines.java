@@ -38,9 +38,7 @@ public class SearchEngines extends HttpServlet {
 	 */
 	searchString = URLEncoder.encode(searchString, "US-ASCII");
 
-	SearchEngineProcess process = new SearchEngineProcess(searchEngineName, searchString);
-
-	String searchURL = process.makeURL();
+	String searchURL = SearchEngineProcess.makeURL(searchEngineName, searchString);
 
 	if (searchURL != null) {
 	    response.sendRedirect(searchURL);
